@@ -21,6 +21,7 @@ yarn dev
 [react-social-icons](https://jaketrent.github.io/react-social-icons/)
 
 Installation
+
 `% yarn add react-social-icons`
 
 ### Animation
@@ -28,4 +29,13 @@ Installation
 - [Framer Motion](https://www.framer.com/motion/)
 
 Installation
+
 `% yarn add framer-motion`
+
+#### type animation
+
+[react-simple-typewriter](https://www.npmjs.com/package/react-simple-typewriter)
+
+Installation
+
+`% yarn add react-simple-typewriter`
