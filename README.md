@@ -12,7 +12,7 @@ yarn dev
 
 ### Style
 
-tailwindCSS
+- tailwindCSS
 
 [Installation](https://tailwindcss.com/docs/guides/nextjs)
 
@@ -20,4 +20,12 @@ tailwindCSS
 
 [react-social-icons](https://jaketrent.github.io/react-social-icons/)
 
-`yarn add react-social-icons`
+Installation
+`% yarn add react-social-icons`
+
+### Animation
+
+- [Framer Motion](https://www.framer.com/motion/)
+
+Installation
+`% yarn add framer-motion`
