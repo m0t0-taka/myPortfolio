@@ -1,13 +1,28 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Header from "../components/Header";
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
         <title>Moto Portfolio</title>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
       </Head>
+
+      {/* Header */}
+      <Header />
+
+      {/* Hero */}
+
+      {/* About */}
+
+      {/* Experience */}
+
+      {/* Skill */}
+
+      {/* Projects */}
+
+      {/* Contact */}
     </div>
   );
 };

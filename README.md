@@ -10,6 +10,14 @@ yarn dev
 
 ## UI
 
+### Style
+
 tailwindCSS
 
 [Installation](https://tailwindcss.com/docs/guides/nextjs)
+
+### Social icon
+
+[react-social-icons](https://jaketrent.github.io/react-social-icons/)
+
+`yarn add react-social-icons`
