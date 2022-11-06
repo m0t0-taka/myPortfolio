@@ -39,3 +39,9 @@ Installation
 Installation
 
 `% yarn add react-simple-typewriter`
+
+### form
+
+[React Hook Form](https://react-hook-form.com/)
+
+`% yarn add react-hook-form`
