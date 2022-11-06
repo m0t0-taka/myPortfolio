@@ -16,6 +16,8 @@ yarn dev
 
 [Installation](https://tailwindcss.com/docs/guides/nextjs)
 
+- [tailwind scrollbar](https://www.npmjs.com/package/tailwind-scrollbar)
+
 ### Social icon
 
 [react-social-icons](https://jaketrent.github.io/react-social-icons/)
