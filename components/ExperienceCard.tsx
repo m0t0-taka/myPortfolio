@@ -33,7 +33,7 @@ export default function ExperienceCard({}: Props) {
           />
         </div>
         <p className="uppercase py-5 text-gray-300">2013.3 - 2020.4</p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
+        <ul className="list-disc space-y-4 ml-5 pr-5 text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
           <li>あああ</li>
           <li>いいい</li>
           <li>ううう</li>

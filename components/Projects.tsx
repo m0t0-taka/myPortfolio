@@ -41,6 +41,9 @@ export default function Projects({}: Props) {
                 </span>
                 カレンダー
               </h4>
+              <div className="flex item-center space-x-2 justify-center">
+                <img className="h-10 w-10 rounded-full" src="./React.png" />
+              </div>
               <p className="text-lg text-center md:text-left">
                 月間のカレンダーアプリです。React、JavaScriptで作成し、データはLocalStorage保存です。AWS
                 AmplifyにHostingしています。

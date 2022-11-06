@@ -18,19 +18,19 @@ export default function Skills({}: Props) {
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
         Hoverすると習熟度が表示されます。
       </h3>
-      <div className="mt-20 grid grid-cols-4 gap-5">
+      <div className="mt-20 grid grid-cols-3 gap-5">
         <Skill />
         <Skill />
         <Skill />
         <Skill />
         <Skill />
         <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        <Skill directionLeft />
+        <Skill directionLeft />
+        <Skill directionLeft />
+        <Skill directionLeft />
+        <Skill directionLeft />
+        <Skill directionLeft />
       </div>
     </motion.div>
   );
