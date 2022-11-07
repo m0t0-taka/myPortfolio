@@ -72,9 +72,9 @@ export default function Projects({}: Props) {
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-2xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
-                  Case Study {i + 1} of {projects.length}:
+                  {project.name}
                 </span>
-                {project.name}
+                {` : Case Study ${i + 1} of ${projects.length}`}
               </h4>
               {/* <div className="flex item-center space-x-2 justify-center">
                 <img className="h-10 w-10 rounded-full" src={"./React.png"} />
