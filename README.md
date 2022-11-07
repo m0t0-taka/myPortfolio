@@ -47,3 +47,9 @@ Installation
 [React Hook Form](https://react-hook-form.com/)
 
 `% yarn add react-hook-form`
+
+## Deploy
+
+Vercel
+
+https://my-portfolio-pink-two.vercel.app/
