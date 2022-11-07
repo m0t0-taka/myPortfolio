@@ -26,19 +26,31 @@ export default function ExperienceCardAmbient({}: Props) {
         <div className="flex space-x-2 my-2">
           <Image
             className="h-10 w-10 rounded-full"
-            src="https://pbs.twimg.com/profile_images/1163721694881574913/20__8c4H_400x400.png"
+            src="/stack/AWS.png"
+            alt=""
+            width={40}
+            height={40}
+          />
+          <Image
+            className="h-10 w-10 rounded-full"
+            src="/stack/Next.js.png"
+            alt=""
+            width={40}
+            height={40}
+          />
+          <Image
+            className="h-10 w-10 rounded-full"
+            src="/stack/TypeScript.png"
             alt=""
             width={40}
             height={40}
           />
         </div>
-        <p className="uppercase py-5 text-gray-300">2013.3 - 2020.4</p>
+        <p className="uppercase py-5 text-gray-300">2022.3 - 在籍中</p>
         <ul className="list-disc space-y-4 ml-5 pr-5 text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
-          <li>あああ</li>
-          <li>いいい</li>
-          <li>ううう</li>
-          <li>えええ</li>
-          <li>おおお</li>
+          <li>クラウドワーカーとして月40時間参画</li>
+          <li>モビリティサービスの開発</li>
+          <li>複数名でチーム開発</li>
         </ul>
       </div>
     </article>

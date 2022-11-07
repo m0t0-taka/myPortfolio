@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
-export default function ExperienceCard({}: Props) {
+export default function ExperienceCardOkuma({}: Props) {
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
@@ -34,11 +34,14 @@ export default function ExperienceCard({}: Props) {
         </div>
         <p className="uppercase py-5 text-gray-300">2013.3 - 2020.4</p>
         <ul className="list-disc space-y-4 ml-5 pr-5 text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
-          <li>あああ</li>
-          <li>いいい</li>
-          <li>ううう</li>
-          <li>えええ</li>
-          <li>おおお</li>
+          <li>
+            製品設計者として、オークマ取り扱い製品の内、主に1シリーズの6機種を担当
+          </li>
+          <li>2019年 社内で技能を競う大会の設計部門で約100名の中、準優勝</li>
+          <li>
+            2019年
+            半年間のアメリカ駐在。設計部の代表として歴代最年少でアメリカ拠点の技術サポート
+          </li>
         </ul>
       </div>
     </article>
