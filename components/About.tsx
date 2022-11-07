@@ -28,7 +28,7 @@ export default function About({}: Props) {
         viewport={{ once: true }}
         src="/profileAbout.png"
         // object-coverでアスペクト比をキープ
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 object-cover rounded-full md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[500px]"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 object-cover rounded-full md:rounded-lg md:w-64 md:h-64 xl:w-[400px] xl:h-[400px]"
       />
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-2xl font-semibold">Background</h4>

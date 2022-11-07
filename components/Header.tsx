@@ -33,7 +33,7 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://twitter.com/Almonta5"
+          url="https://github.com/m0t0-taka"
           fgColor="gray"
           bgColor="transparent"
         />
