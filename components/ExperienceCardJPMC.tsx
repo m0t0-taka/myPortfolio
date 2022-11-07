@@ -16,7 +16,7 @@ export default function ExperienceCard({}: Props) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-        src="/okumaLogo.png"
+        src="/companyLogo/japanmedicalLogo.png"
         alt=""
       />
 
