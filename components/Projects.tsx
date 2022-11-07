@@ -4,7 +4,41 @@ import { motion } from "framer-motion";
 type Props = {};
 
 export default function Projects({}: Props) {
-  const projects = [1, 2, 3];
+  const projects = [
+    {
+      name: "カレンダー",
+      imagePath: "/project/Calendar.png",
+      environment: "React, JavaScript, LocalStorage",
+      library: "tailwindCSS, Dayjs",
+      hosting: "AWS Amplify",
+      url: "https://main.d3mzo6904s4hdm.amplifyapp.com/",
+      github: "https://github.com/m0t0-taka/react-calendar",
+      content:
+        "Googleカレンダー風月間カレンダーアプリです。毎月決まった予定を登録するようなケースで都度入力の手間を省くことができます。",
+    },
+    {
+      name: "Blog",
+      imagePath: "/project/Blog.png",
+      environment: "Next.js JavaScript Graphql OAuth",
+      library: "tailwindCSS",
+      hosting: "AWS Amplify",
+      url: "https://main.d3jm3y5fblmo2k.amplifyapp.com/",
+      github: "https://github.com/m0t0-taka/nextjs_blog_amplify",
+      content:
+        "AWS Amplifyを使用しGraphqlにてbackendを構築した簡単なBlogアプリです。Google OAuth認証にも対応しています。",
+    },
+    {
+      name: "Maker Awesome",
+      imagePath: "/project/MakerAwesome.png",
+      environment: "RubyonRails",
+      library: "",
+      hosting: "heroku",
+      url: "https://pacific-beach-06978.herokuapp.com/",
+      github: "https://github.com/m0t0-taka/original_app",
+      content:
+        "プログラミングスクール卒業時にRubyonRailsで作成したアプリです。",
+    },
+  ];
 
   return (
     <motion.div
@@ -21,7 +55,7 @@ export default function Projects({}: Props) {
         {projects.map((project, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-20 pt-20 pb-10md:p-44 h-screen"
           >
             <motion.img
               initial={{
@@ -31,7 +65,8 @@ export default function Projects({}: Props) {
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              src="./CalendarReact.png"
+              src={project.imagePath}
+              className="h-56 object-cover"
               alt=""
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
@@ -39,15 +74,21 @@ export default function Projects({}: Props) {
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {i + 1} of {projects.length}:
                 </span>
-                カレンダー
+                {project.name}
               </h4>
-              <div className="flex item-center space-x-2 justify-center">
-                <img className="h-10 w-10 rounded-full" src="./React.png" />
-              </div>
-              <p className="text-lg text-center md:text-left">
-                月間のカレンダーアプリです。React、JavaScriptで作成し、データはLocalStorage保存です。AWS
-                AmplifyにHostingしています。
-              </p>
+              {/* <div className="flex item-center space-x-2 justify-center">
+                <img className="h-10 w-10 rounded-full" src={"./React.png"} />
+              </div> */}
+              <ul className="">
+                <li>開発環境：　　　　{project.environment}</li>
+                <li>使用ライブラリ等：{project.library}</li>
+                <li>Hosting：　　　　{project.hosting}</li>
+                <li>
+                  URL：　　　　　　<a>{project.url}</a>
+                </li>
+                {/* <li>GitHub：　　　　{project.github}</li> */}
+                <li>概要：{project.content}</li>
+              </ul>
             </div>
           </div>
         ))}
