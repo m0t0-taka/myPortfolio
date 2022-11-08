@@ -6,7 +6,7 @@ type Props = {};
 
 export default function ExperienceCardOkuma({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[350px] md:w-[500px] xl:w-[800px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
         initial={{
           y: -100,
@@ -40,7 +40,7 @@ export default function ExperienceCardOkuma({}: Props) {
           <li>2019年 社内で技能を競う大会の設計部門で約100名の中、準優勝</li>
           <li>
             2019年
-            半年間のアメリカ駐在。設計部の代表として歴代最年少でアメリカ拠点の技術サポート
+            半年間のアメリカ駐在。設計部代表としてアメリカ拠点の技術サポート
           </li>
         </ul>
       </div>

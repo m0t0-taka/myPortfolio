@@ -30,13 +30,13 @@ export default function Projects({}: Props) {
     {
       name: "Maker Awesome",
       imagePath: "/project/MakerAwesome.png",
-      environment: "RubyonRails",
-      library: "",
+      environment: "Ruby on Rails, postgresql",
+      library: "devise, rails_admin, ransack, carrierwave",
       hosting: "heroku",
       url: "https://pacific-beach-06978.herokuapp.com/",
       github: "https://github.com/m0t0-taka/original_app",
       content:
-        "プログラミングスクール卒業時にRubyonRailsで作成したアプリです。",
+        "プログラミングスクール卒業時にRuby on Railsで作成したアプリです。",
     },
   ];
 
@@ -55,7 +55,7 @@ export default function Projects({}: Props) {
         {projects.map((project, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-20 pt-20 pb-10md:p-44 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-20 pt-20 pb-5 md:px-44 md:pt-44 md:pb-32 h-screen"
           >
             <motion.img
               initial={{
@@ -79,15 +79,40 @@ export default function Projects({}: Props) {
               {/* <div className="flex item-center space-x-2 justify-center">
                 <img className="h-10 w-10 rounded-full" src={"./React.png"} />
               </div> */}
-              <ul className="">
-                <li>開発環境：　　　　{project.environment}</li>
-                <li>使用ライブラリ等：{project.library}</li>
-                <li>Hosting：　　　　{project.hosting}</li>
-                <li>
-                  URL：　　　　　　<a>{project.url}</a>
+              <ul className="w-80 md:w-auto">
+                <li className="mb-1">
+                  <div className="md:flex">
+                    <div className="md:flex-none w-36">開発環境 :</div>
+                    <div className="md:flex-1">{project.environment}</div>
+                  </div>
                 </li>
-                {/* <li>GitHub：　　　　{project.github}</li> */}
-                <li>概要：{project.content}</li>
+                <li className="mb-1">
+                  <div className="md:flex">
+                    <div className="md:flex-none w-36">使用ライブラリ等 :</div>
+                    <div className="md:flex-1">{project.library}</div>
+                  </div>
+                </li>
+                <li className="mb-1">
+                  <div className="md:flex">
+                    <div className="md:flex-none w-36">Hosting :</div>
+                    <div className="md:flex-1">{project.hosting}</div>
+                  </div>
+                </li>
+                <li className="mb-1">
+                  <div className="md:flex">
+                    <div className="md:flex-none w-36">url :</div>
+                    <div className="md:flex-1">
+                      <a href={project.url}>{project.url}</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="md:flex">
+                    <div className="md:flex-none w-36">概要 :</div>
+                    <div className="md:flex-1">{project.content}</div>
+                  </div>
+                </li>
+                {/* <li>GitHub：{project.github}</li> */}
               </ul>
             </div>
           </div>
