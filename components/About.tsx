@@ -32,7 +32,7 @@ export default function About({}: Props) {
       />
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-2xl font-semibold">Background</h4>
-        <div className="text-xs md:text-sm text-left">
+        <div className="text-sm md:text-base text-left">
           <div>
             富山県立大学工学部知能デザイン工学科を2013年に卒業後新卒でオークマ株式会社に入社。
             <br />

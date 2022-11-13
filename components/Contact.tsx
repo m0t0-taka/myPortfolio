@@ -42,6 +42,7 @@ export default function Contact({}: Props) {
             <input
               name="user_name"
               placeholder="Name"
+              // globals.cssに記述
               className="contactInput"
               type="text"
             />

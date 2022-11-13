@@ -19,7 +19,7 @@ export default function Projects({}: Props) {
     {
       name: "Blog",
       imagePath: "/project/Blog.png",
-      environment: "Next.js JavaScript Graphql OAuth",
+      environment: "Next.js, JavaScript, Graphql, OAuth",
       library: "tailwindCSS",
       hosting: "AWS Amplify",
       url: "https://main.d3jm3y5fblmo2k.amplifyapp.com/",
