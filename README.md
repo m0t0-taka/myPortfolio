@@ -42,11 +42,17 @@ Installation
 
 `% yarn add react-simple-typewriter`
 
-### form
+### contact form
 
-[React Hook Form](https://react-hook-form.com/)
+フォーム投稿のメール送信に EmailJS を使用
 
-`% yarn add react-hook-form`
+[EmailJS](https://dashboard.emailjs.com/)
+
+[Installation](https://www.emailjs.com/docs/sdk/installation/)
+
+`% npm install @emailjs/browser --save`
+
+[React の参考](https://www.emailjs.com/docs/examples/reactjs/)
 
 ## Deploy
 

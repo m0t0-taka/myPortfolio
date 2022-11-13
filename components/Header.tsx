@@ -55,8 +55,7 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
-        {/* <Link href="#contact"> */}
-        <div onClick={() => alert("Sorry, unimplemented")}>
+        <Link href="#contact">
           <SocialIcon
             className="cursor-pointer"
             network="email"
@@ -66,8 +65,7 @@ export default function Header({}: Props) {
           <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
             Get In Touch
           </p>
-        </div>
-        {/* </Link> */}
+        </Link>
       </motion.div>
     </header>
   );

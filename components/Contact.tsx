@@ -1,19 +1,30 @@
-import React from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
-
-type Inputs = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 type Props = {};
 
 export default function Contact({}: Props) {
-  const { register, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) =>
-    (window.location.href = `mailto:${process.env.EMAIL}?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message} ${data.email}}`);
+  const form = useRef<any>();
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    if (serviceId && templateId && form.current && publicKey) {
+      emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+        (result) => {
+          console.log(result.text);
+          confirm("送信完了しました。");
+        },
+        (error) => {
+          console.log(error.text);
+          confirm("送信失敗しました。");
+        }
+      );
+    }
+  };
 
   return (
     <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
@@ -23,37 +34,38 @@ export default function Contact({}: Props) {
 
       <div className="flex flex-col space-y-10">
         <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex flex-col space-y-4 w-fit mx-auto"
         >
           <div className="flex space-x-2">
             <input
-              {...register("name")}
+              name="user_name"
               placeholder="Name"
               className="contactInput"
               type="text"
             />
             <input
-              {...register("email")}
+              name="user_email"
               placeholder="Email"
               className="contactInput"
               type="email"
             />
           </div>
           <input
-            {...register("subject")}
+            name="subject"
             placeholder="Subject"
             className="contactInput"
             type="text"
           />
           <textarea
-            {...register("message")}
+            name="message"
             placeholder="Message"
             className="contactInput"
           />
           <button
             type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#F7AB0A] py-3 px-10 rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>
