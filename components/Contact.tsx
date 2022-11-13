@@ -32,46 +32,42 @@ export default function Contact({}: Props) {
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10">
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="flex flex-col space-y-4 w-fit mx-auto"
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="flex flex-col space-y-4 w-80 md:w-96 mx-auto"
+      >
+        <input
+          name="user_name"
+          placeholder="Name"
+          // globals.cssに記述
+          className="contactInput"
+          type="text"
+        />
+        <input
+          name="user_email"
+          placeholder="Email"
+          className="contactInput"
+          type="email"
+        />
+        <input
+          name="subject"
+          placeholder="Subject"
+          className="contactInput"
+          type="text"
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          className="contactInput"
+        />
+        <button
+          type="submit"
+          className="bg-[#F7AB0A] py-3 px-10 rounded-md text-black font-bold text-lg"
         >
-          <div className="flex space-x-2">
-            <input
-              name="user_name"
-              placeholder="Name"
-              // globals.cssに記述
-              className="contactInput"
-              type="text"
-            />
-            <input
-              name="user_email"
-              placeholder="Email"
-              className="contactInput"
-              type="email"
-            />
-          </div>
-          <input
-            name="subject"
-            placeholder="Subject"
-            className="contactInput"
-            type="text"
-          />
-          <textarea
-            name="message"
-            placeholder="Message"
-            className="contactInput"
-          />
-          <button
-            type="submit"
-            className="bg-[#F7AB0A] py-3 px-10 rounded-md text-black font-bold text-lg"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
+          Submit
+        </button>
+      </form>
     </div>
   );
 }

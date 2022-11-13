@@ -69,7 +69,7 @@ export default function Projects({}: Props) {
               className="h-56 object-cover"
               alt=""
             />
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+            <div className="space-y-5 md:space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-2xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   {project.name}
