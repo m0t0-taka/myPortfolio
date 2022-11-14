@@ -21,8 +21,10 @@ export default function ExperienceCardJPMC({}: Props) {
       />
 
       <div className="px-0 md:px-10">
-        <h4 className="text-3xl font-light">Engineer Open Position</h4>
-        <p className="font-bold text-2xl mt-1">
+        <h4 className="text-xl md:text-3xl font-light">
+          Engineer Open Position
+        </h4>
+        <p className="text-lg md:text-2xl font-bold mt-1">
           株式会社ジャパン・メディカル・カンパニー
         </p>
         <div className="flex space-x-2 my-2">
@@ -63,7 +65,7 @@ export default function ExperienceCardJPMC({}: Props) {
           />
         </div>
         <p className="uppercase py-5 text-gray-300">2021.10 - 在籍中</p>
-        <ul className="list-disc space-y-2 ml-5 pr-5 text-base md:text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
+        <ul className="list-disc space-y-2 ml-5 pr-5 text-sm md:text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
           <li>以下アプリの開発・保守・運用、ベンダーマネジメント</li>
           <ul>
             <li>・社内スケジュール管理ツール</li>

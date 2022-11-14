@@ -21,8 +21,10 @@ export default function ExperienceCardAmbient({}: Props) {
       />
 
       <div className="px-0 md:px-10">
-        <h4 className="text-3xl font-light">Frontend Engineer</h4>
-        <p className="font-bold text-2xl mt-1">Ambient Lab株式会社</p>
+        <h4 className="text-xl md:text-3xl font-light">Frontend Engineer</h4>
+        <p className="text-lg md:text-2xl font-bold mt-1">
+          Ambient Lab株式会社
+        </p>
         <div className="flex space-x-2 my-2">
           <Image
             className="h-10 w-10 rounded-full"
@@ -47,7 +49,7 @@ export default function ExperienceCardAmbient({}: Props) {
           />
         </div>
         <p className="uppercase py-5 text-gray-300">2022.3 - 在籍中</p>
-        <ul className="list-disc space-y-2 ml-5 pr-5 text-base md:text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
+        <ul className="list-disc space-y-2 ml-5 pr-5 text-sm md:text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
           <li>クラウドワーカーとして月40時間参画</li>
           <li>モビリティサービスの開発</li>
           <li>複数名でチーム開発</li>

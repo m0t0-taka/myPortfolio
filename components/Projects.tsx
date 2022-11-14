@@ -70,7 +70,7 @@ export default function Projects({}: Props) {
               alt=""
             />
             <div className="space-y-5 md:space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-2xl font-semibold text-center">
+              <h4 className="text-lg md:text-2xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   {project.name}
                 </span>
@@ -79,29 +79,29 @@ export default function Projects({}: Props) {
               {/* <div className="flex item-center space-x-2 justify-center">
                 <img className="h-10 w-10 rounded-full" src={"./React.png"} />
               </div> */}
-              <ul className="w-80 md:w-auto">
+              <ul className="w-80 md:w-auto text-sm md:text-lg">
                 <li className="mb-1">
                   <div className="md:flex">
                     <div className="md:flex-none w-36">開発環境 :</div>
-                    <div className="md:flex-1">{project.environment}</div>
+                    <div className="md:flex-1 ml-1">{project.environment}</div>
                   </div>
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
                     <div className="md:flex-none w-36">使用ライブラリ等 :</div>
-                    <div className="md:flex-1">{project.library}</div>
+                    <div className="md:flex-1 ml-1">{project.library}</div>
                   </div>
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
                     <div className="md:flex-none w-36">Hosting :</div>
-                    <div className="md:flex-1">{project.hosting}</div>
+                    <div className="md:flex-1 ml-1">{project.hosting}</div>
                   </div>
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
                     <div className="md:flex-none w-36">url :</div>
-                    <div className="md:flex-1">
+                    <div className="md:flex-1 ml-1">
                       <a href={project.url}>{project.url}</a>
                     </div>
                   </div>
@@ -109,7 +109,7 @@ export default function Projects({}: Props) {
                 <li>
                   <div className="md:flex">
                     <div className="md:flex-none w-36">概要 :</div>
-                    <div className="md:flex-1">{project.content}</div>
+                    <div className="md:flex-1 ml-1">{project.content}</div>
                   </div>
                 </li>
                 {/* <li>GitHub：{project.github}</li> */}
