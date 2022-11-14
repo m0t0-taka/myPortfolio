@@ -47,7 +47,7 @@ export default function Projects({}: Props) {
       transition={{ duration: 1.5 }}
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
 
@@ -83,25 +83,25 @@ export default function Projects({}: Props) {
                 <li className="mb-1">
                   <div className="md:flex">
                     <div className="md:flex-none w-36">開発環境 :</div>
-                    <div className="md:flex-1 ml-1">{project.environment}</div>
+                    <div className="md:flex-1 ml-2">{project.environment}</div>
                   </div>
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
                     <div className="md:flex-none w-36">使用ライブラリ等 :</div>
-                    <div className="md:flex-1 ml-1">{project.library}</div>
+                    <div className="md:flex-1 ml-2">{project.library}</div>
                   </div>
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
                     <div className="md:flex-none w-36">Hosting :</div>
-                    <div className="md:flex-1 ml-1">{project.hosting}</div>
+                    <div className="md:flex-1 ml-2">{project.hosting}</div>
                   </div>
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
                     <div className="md:flex-none w-36">url :</div>
-                    <div className="md:flex-1 ml-1">
+                    <div className="md:flex-1 ml-2">
                       <a href={project.url}>{project.url}</a>
                     </div>
                   </div>
@@ -109,7 +109,7 @@ export default function Projects({}: Props) {
                 <li>
                   <div className="md:flex">
                     <div className="md:flex-none w-36">概要 :</div>
-                    <div className="md:flex-1 ml-1">{project.content}</div>
+                    <div className="md:flex-1 ml-2">{project.content}</div>
                   </div>
                 </li>
                 {/* <li>GitHub：{project.github}</li> */}

@@ -32,7 +32,7 @@ export default function ExperienceCardOkuma({}: Props) {
             height={40}
           />
         </div>
-        <p className="uppercase py-5 text-gray-300">2013.3 - 2020.4</p>
+        <p className="uppercase py-3 md:py-5 text-gray-300">2013.3 - 2020.4</p>
         <ul className="list-disc space-y-2 ml-5 pr-5 text-sm md:text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
           <li>
             製品設計者として、オークマ取り扱い製品の内、主に1シリーズの6機種を担当

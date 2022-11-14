@@ -48,7 +48,7 @@ export default function ExperienceCardAmbient({}: Props) {
             height={40}
           />
         </div>
-        <p className="uppercase py-5 text-gray-300">2022.3 - 在籍中</p>
+        <p className="uppercase py-3 md:py-5 text-gray-300">2022.3 - 在籍中</p>
         <ul className="list-disc space-y-2 ml-5 pr-5 text-sm md:text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
           <li>クラウドワーカーとして月40時間参画</li>
           <li>モビリティサービスの開発</li>
