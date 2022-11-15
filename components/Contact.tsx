@@ -23,6 +23,12 @@ export default function Contact({}: Props) {
           confirm("送信失敗しました。");
         }
       );
+    } else {
+      alert("EmailJS error");
+      console.log("serviceId", serviceId);
+      console.log("templateId", templateId);
+      console.log("form.current", form.current);
+      console.log("publicKey", publicKey);
     }
   };
 
