@@ -82,25 +82,25 @@ export default function Projects({}: Props) {
               <ul className="w-80 md:w-auto text-sm md:text-lg">
                 <li className="mb-1">
                   <div className="md:flex">
-                    <div className="md:flex-none w-36">開発環境 :</div>
+                    <div className="md:flex-none w-40">開発環境 :</div>
                     <div className="md:flex-1 ml-2">{project.environment}</div>
                   </div>
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
-                    <div className="md:flex-none w-36">使用ライブラリ等 :</div>
+                    <div className="md:flex-none w-40">使用ライブラリ等 :</div>
                     <div className="md:flex-1 ml-2">{project.library}</div>
                   </div>
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
-                    <div className="md:flex-none w-36">Hosting :</div>
+                    <div className="md:flex-none w-40">Hosting :</div>
                     <div className="md:flex-1 ml-2">{project.hosting}</div>
                   </div>
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
-                    <div className="md:flex-none w-36">url :</div>
+                    <div className="md:flex-none w-40">url :</div>
                     <div className="md:flex-1 ml-2">
                       <a href={project.url}>{project.url}</a>
                     </div>
@@ -108,7 +108,7 @@ export default function Projects({}: Props) {
                 </li>
                 <li>
                   <div className="md:flex">
-                    <div className="md:flex-none w-36">概要 :</div>
+                    <div className="md:flex-none w-40">概要 :</div>
                     <div className="md:flex-1 ml-2">{project.content}</div>
                   </div>
                 </li>
