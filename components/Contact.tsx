@@ -25,10 +25,6 @@ export default function Contact({}: Props) {
       );
     } else {
       alert("EmailJS error");
-      console.log("serviceId", serviceId);
-      console.log("templateId", templateId);
-      console.log("form.current", form.current);
-      console.log("publicKey", publicKey);
     }
   };
 
