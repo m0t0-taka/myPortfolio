@@ -26,7 +26,7 @@ export default function Skills({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex relative flex-col text-center md:pt-40 md:text-left md:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
+      className="flex relative flex-col md:pt-40 max-w-[2000px] min-h-screen justify-center mx-auto items-center"
     >
       <h3 className="absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Skills

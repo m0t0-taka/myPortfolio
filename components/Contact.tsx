@@ -24,7 +24,10 @@ export default function Contact({}: Props) {
         }
       );
     } else {
-      alert("EmailJS error");
+      alert(
+        "予期せぬエラーが発生しました。twitterDMにてお問い合わせください。"
+      );
+      console.log("EmailJS error");
     }
   };
 
@@ -65,7 +68,7 @@ export default function Contact({}: Props) {
         />
         <button
           type="submit"
-          className="bg-[#F7AB0A] py-3 px-10 rounded-md text-black font-bold text-lg"
+          className="bg-[#F7AB0A] py-3 px-10 rounded-md text-[#363636] font-bold text-lg"
         >
           Submit
         </button>
