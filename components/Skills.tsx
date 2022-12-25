@@ -35,14 +35,14 @@ export default function Skills({}: Props) {
         Hoverすると習熟度が表示されます。
       </h3>
       <div className="mt-20 grid grid-cols-3 gap-5">
-        <Skill stackImage={javaScript} proficiency="70" />
-        <Skill stackImage={typeScript} proficiency="30" />
+        <Skill stackImage={javaScript} proficiency="80" />
+        <Skill stackImage={typeScript} proficiency="50" />
         <Skill stackImage={ruby} proficiency="50" />
         <Skill stackImage={python} proficiency="30" />
-        <Skill stackImage={next} proficiency="50" />
-        <Skill stackImage={react} proficiency="70" />
+        <Skill stackImage={next} proficiency="70" />
+        <Skill stackImage={react} proficiency="80" />
         <Skill directionLeft stackImage={flutter} proficiency="10" />
-        <Skill directionLeft stackImage={aws} proficiency="30" />
+        <Skill directionLeft stackImage={aws} proficiency="40" />
         <Skill directionLeft stackImage={figma} proficiency="60" />
         <Skill directionLeft stackImage={zapier} proficiency="90" />
         <Skill directionLeft stackImage={airtable} proficiency="90" />
