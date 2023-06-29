@@ -32,15 +32,17 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center"
       >
-        <SocialIcon
+        {/* <SocialIcon
           url="https://twitter.com/Almonta5"
           fgColor="gray"
           bgColor="transparent"
-        />
+        /> */}
         <SocialIcon
           url="https://github.com/m0t0-taka"
           fgColor="gray"
           bgColor="transparent"
+          target="_blank"
+          rel="noopener noreferrer"
         />
       </motion.div>
 

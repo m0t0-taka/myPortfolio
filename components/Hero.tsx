@@ -4,6 +4,7 @@ import Link from "next/link";
 import profileImage from "../public/profileImage.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
+import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
 
 type Props = {};
 
@@ -15,7 +16,7 @@ export default function Hero({}: Props) {
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden relative">
       <BackgroundCircles />
       <Image
         className="relative rounded-full h-40 w-40 space-y-8 items-center justify-center text-center overflow-hidden"
@@ -44,6 +45,9 @@ export default function Hero({}: Props) {
             <button className="heroButton">Projects</button>
           </Link>
         </div>
+      </div>
+      <div className="absolute bottom-[20px] left-1/2 -translate-x-1/2 text-center">
+        <ArrowDownCircleIcon className="h-10 w-10 text-[#F7AB0A]/40 animate-bounce" />
       </div>
     </div>
   );
