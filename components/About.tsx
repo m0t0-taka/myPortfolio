@@ -32,31 +32,30 @@ export default function About({}: Props) {
       />
       <div className="space-y-5 px-0 md:px-10">
         <h4 className="text-lg md:text-2xl font-semibold">Background</h4>
-        <div className="text-xs md:text-base text-left">
+        <div className="text-xs md:text-base text-left space-y-4">
           <div>
             富山県立大学工学部知能デザイン工学科を2013年に卒業後新卒でオークマ株式会社に入社。
             <br />
-            設計部にて8年間工作機械の設計に従事し、ユーザーごとに異なる多種多様な課題の解決のため、3DCAD、2DCADを用いた機構設計、部品設計に従事。
+            設計部にて8年間、3DCAD、2DCADを用いた工作機械の機構設計、部品設計に従事。
             <br />
             2019年7月よりアメリカノースカロライナの拠点に半年間駐在し、現地の技術サポートを経験。
           </div>
           <div className="mt-1.5">
-            2021年4月に退職し、2021年5月よりプログラミングスクールDIVE INTO
-            CODEに入校。
+            2021年5月よりプログラミングスクールDIVE INTO CODEに入校。
             <br />
-            Webエンジニアコースにて、フルタイムで4ヶ月間、Ruby on
+            フルタイムで4ヶ月間学習し、Ruby on
             Railsをメインにプログラミングを習得。
             <br />
           </div>
           <div className="mt-1.5">
-            2021年10月に株式会社ジャパン・メディカル・カンパニーに入社。
+            2021年10月に株式会社ジャパン・メディカル・カンパニー入社。
             <br />
-            社内で唯一のインフラ、アプリ、ツール開発担当として、社外ベンダーと協業し、患者・医師・社員にとって良いサービスを心がけ開発に従事。
+            社内のインフラ、アプリ、ツール開発をリードし、患者・医師・社員にとって良いサービス開発に従事。
           </div>
           <div className="mt-1.5">
-            2022年3月より複業にてモビリティーサービスの開発に参画。
+            2022年3月より副業にてモビリティーサービスの開発に参画。
             <br />
-            Next.js、TypeScript、AWS Amplifyを使用した大規模なアプリ開発を経験。
+            Next.js(React)、TypeScript、AWS Amplifyを使用した開発に従事。
           </div>
         </div>
       </div>

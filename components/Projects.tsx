@@ -9,7 +9,7 @@ export default function Projects({}: Props) {
       name: "カレンダー",
       imagePath: "/project/Calendar.png",
       environment: "React, JavaScript, LocalStorage",
-      library: "tailwindCSS, Dayjs",
+      library: "Tailwind CSS, Dayjs",
       hosting: "AWS Amplify",
       url: "https://main.d3mzo6904s4hdm.amplifyapp.com/",
       github: "https://github.com/m0t0-taka/react-calendar",
@@ -19,13 +19,13 @@ export default function Projects({}: Props) {
     {
       name: "Blog",
       imagePath: "/project/Blog.png",
-      environment: "Next.js, JavaScript, Graphql, OAuth",
-      library: "tailwindCSS",
+      environment: "Next.js, JavaScript, GraphQL, OAuth",
+      library: "Tailwind CSS",
       hosting: "AWS Amplify",
       url: "https://main.d3jm3y5fblmo2k.amplifyapp.com/",
       github: "https://github.com/m0t0-taka/nextjs_blog_amplify",
       content:
-        "AWS Amplifyを使用しGraphqlにてbackendを構築した簡単なBlogアプリです。Google OAuth認証にも対応しています。",
+        "AWS Amplifyを使用しGraphQLにてbackendを構築した簡単なBlogアプリです。Google OAuth認証にも対応しています。",
     },
     {
       name: "Maker Awesome",
@@ -100,9 +100,15 @@ export default function Projects({}: Props) {
                 </li>
                 <li className="mb-1">
                   <div className="md:flex">
-                    <div className="md:flex-none w-40">url :</div>
+                    <div className="md:flex-none w-40">URL :</div>
                     <div className="md:flex-1 ml-2">
-                      <a href={project.url}>{project.url}</a>
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {project.url}
+                      </a>
                     </div>
                   </div>
                 </li>
