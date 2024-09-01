@@ -24,7 +24,6 @@ const Portfolio = () => {
           snap={{ mass: 4, tension: 200 }}
         >
           {/* モデルを浮かせる＋回転させる */}
-          {/* @ts-expect-error */}
           <Float rotationIntensity={1.3}>
             {/* 明かり */}
             {/* intensityは光量 */}
@@ -42,7 +41,6 @@ const Portfolio = () => {
         </PresentationControls>
 
         {/* 影 */}
-        {/* @ts-expect-error */}
         <ContactShadows scale={7} blur={2.4} opacity={0.5} position-y={-1.8} />
       </Canvas>
     </div>

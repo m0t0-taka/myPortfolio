@@ -20,9 +20,13 @@ pnpm dev
 
 - コンポーネント UI ライブラリは shadcn を使用
 
-### Social icon
+### icon
 
+social icon
 [react-social-icons](https://jaketrent.github.io/react-social-icons/)
+
+普通の icon
+[lucide-react](https://lucide.dev/)
 
 ### Animation
 
