@@ -1,13 +1,14 @@
+import { Toaster } from "@/components/ui/toaster";
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Portfolio from "../components/Portfolio";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import WorkExperience from "../components/WorkExperience";
-import Portfolio from "../components/Portfolio";
 
 const Home: NextPage = () => {
   return (
@@ -45,6 +46,7 @@ const Home: NextPage = () => {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
+      <Toaster />
     </div>
   );
 };

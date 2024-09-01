@@ -1,33 +1,33 @@
-import React, { useRef } from "react";
+import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
-type Props = {};
-
-export default function Contact({}: Props) {
+export default function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useRef<any>();
+  const { toast } = useToast();
+
   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-  const sendEmail = (e: any) => {
+  const sendEmail = async (e: any) => {
     e.preventDefault();
 
     if (serviceId && templateId && form.current && publicKey) {
-      emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
-        (result) => {
-          console.log(result.text);
-          confirm("送信完了しました。");
-        },
-        (error) => {
-          console.log(error.text);
-          confirm("送信失敗しました。");
-        }
-      );
-    } else {
-      alert(
-        "予期せぬエラーが発生しました。twitterDMにてお問い合わせください。"
-      );
-      console.log("EmailJS error");
+      try {
+        setIsSubmitting(true);
+        await emailjs.sendForm(serviceId, templateId, form.current, publicKey);
+        toast({
+          title: "送信完了しました。",
+        });
+      } catch (error) {
+        toast({
+          title: "送信に失敗しました。",
+        });
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -37,11 +37,7 @@ export default function Contact({}: Props) {
         Contact
       </h3>
 
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className="flex flex-col space-y-4 w-80 md:w-96 mx-auto"
-      >
+      <form ref={form} className="flex flex-col space-y-4 w-80 md:w-96 mx-auto">
         <input
           name="user_name"
           placeholder="Name"
@@ -67,10 +63,11 @@ export default function Contact({}: Props) {
           className="contactInput"
         />
         <button
-          type="submit"
+          type="button"
+          onClick={sendEmail}
           className="bg-[#F7AB0A] py-3 px-10 rounded-md text-[#363636] font-bold text-lg"
         >
-          Submit
+          {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>
     </div>
