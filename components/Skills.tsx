@@ -13,10 +13,10 @@ export default function Skills({}: Props) {
   // フレームワーク
   const next = "/stack/Next.js.png";
   const react = "/stack/React.png";
-  const flutter = "/stack/Flutter.png";
   // クラウドサービス
   const aws = "/stack/AWS.png";
   const figma = "/stack/Figma.png";
+  const storybook = "/stack/Storybook.png";
   const zapier = "/stack/Zapier.png";
   const airtable = "/stack/Airtable.png";
   const salesforce = "/stack/Salesforce.png";
@@ -35,15 +35,18 @@ export default function Skills({}: Props) {
         Hoverすると習熟度が表示されます。
       </h3>
       <div className="mt-20 grid grid-cols-3 gap-5">
+        {/* 言語 */}
+        <Skill stackImage={typeScript} proficiency="90" />
         <Skill stackImage={javaScript} proficiency="80" />
-        <Skill stackImage={typeScript} proficiency="80" />
+        <Skill stackImage={python} proficiency="60" />
         <Skill stackImage={ruby} proficiency="50" />
-        <Skill stackImage={python} proficiency="40" />
-        <Skill stackImage={next} proficiency="80" />
+        {/* フレームワーク */}
         <Skill stackImage={react} proficiency="90" />
-        <Skill directionLeft stackImage={flutter} proficiency="10" />
-        <Skill directionLeft stackImage={aws} proficiency="50" />
+        <Skill stackImage={next} proficiency="80" />
+        {/* クラウドサービス */}
+        <Skill directionLeft stackImage={aws} proficiency="60" />
         <Skill directionLeft stackImage={figma} proficiency="60" />
+        <Skill directionLeft stackImage={storybook} proficiency="80" />
         <Skill directionLeft stackImage={zapier} proficiency="90" />
         <Skill directionLeft stackImage={airtable} proficiency="90" />
         <Skill directionLeft stackImage={salesforce} proficiency="50" />

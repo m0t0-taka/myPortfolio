@@ -57,6 +57,11 @@ export default function About({}: Props) {
             <br />
             Next.js(React)、TypeScript、AWS Amplifyを使用した開発に従事。
           </div>
+          <div className="mt-1.5">
+            2023年11月より株式会社TalentX入社。
+            <br />
+            フロントエンドのプロフェッショナルとしてしてプロジェクトのフロントエンドをリード
+          </div>
         </div>
       </div>
     </motion.div>

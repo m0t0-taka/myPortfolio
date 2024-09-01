@@ -2,9 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-type Props = {};
-
-export default function ExperienceCardJPMC({}: Props) {
+export default function ExperienceCardJPMC() {
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[350px] md:w-[650px] xl:w-[950px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
@@ -30,14 +28,7 @@ export default function ExperienceCardJPMC({}: Props) {
         <div className="flex space-x-2 my-2">
           <Image
             className="h-10 w-10 rounded-full"
-            src="/stack/Airtable.png"
-            alt=""
-            width={40}
-            height={40}
-          />
-          <Image
-            className="h-10 w-10 rounded-full"
-            src="/stack/Figma.png"
+            src="/stack/TypeScript.png"
             alt=""
             width={40}
             height={40}
@@ -52,6 +43,20 @@ export default function ExperienceCardJPMC({}: Props) {
           <Image
             className="h-10 w-10 rounded-full"
             src="/stack/React.png"
+            alt=""
+            width={40}
+            height={40}
+          />
+          <Image
+            className="h-10 w-10 rounded-full"
+            src="/stack/Airtable.png"
+            alt=""
+            width={40}
+            height={40}
+          />
+          <Image
+            className="h-10 w-10 rounded-full"
+            src="/stack/Figma.png"
             alt=""
             width={40}
             height={40}

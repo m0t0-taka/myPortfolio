@@ -18,6 +18,8 @@ pnpm dev
 
 - [tailwind scrollbar](https://www.npmjs.com/package/tailwind-scrollbar)
 
+- コンポーネント UI ライブラリは shadcn を使用
+
 ### Social icon
 
 [react-social-icons](https://jaketrent.github.io/react-social-icons/)
@@ -45,3 +47,7 @@ pnpm dev
 Vercel
 
 https://my-portfolio-pink-two.vercel.app/
+
+## 画像の作成
+
+- Stack の画像は canva で作成している

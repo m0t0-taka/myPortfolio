@@ -6,11 +6,9 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
 
-type Props = {};
-
-export default function Hero({}: Props) {
+export default function Hero() {
   const [text, count] = useTypewriter({
-    words: ["Hi, The Name is Motohiro Takagi", "I am Frontend Engineer"],
+    words: ["Hi, I am Motohiro Takagi", "I am Frontend Engineer"],
     loop: true,
     delaySpeed: 1000,
   });
