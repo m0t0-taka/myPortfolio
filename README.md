@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ## UI
@@ -22,25 +22,13 @@ yarn dev
 
 [react-social-icons](https://jaketrent.github.io/react-social-icons/)
 
-Installation
-
-`% yarn add react-social-icons`
-
 ### Animation
 
 - [Framer Motion](https://www.framer.com/motion/)
 
-Installation
-
-`% yarn add framer-motion`
-
 #### type animation
 
 [react-simple-typewriter](https://www.npmjs.com/package/react-simple-typewriter)
-
-Installation
-
-`% yarn add react-simple-typewriter`
 
 ### contact form
 
@@ -49,8 +37,6 @@ Installation
 [EmailJS](https://dashboard.emailjs.com/)
 
 [Installation](https://www.emailjs.com/docs/sdk/installation/)
-
-`% npm install @emailjs/browser --save`
 
 [React の参考](https://www.emailjs.com/docs/examples/reactjs/)
 
