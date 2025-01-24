@@ -52,7 +52,7 @@ export default function ExperienceCardTalentX() {
           />
         </div>
         <p className="uppercase py-3 md:py-5 text-gray-300">2023.11 - 在籍中</p>
-        <ul className="list-disc space-y-2 ml-5 pr-5 text-sm md:text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
+        <ul className="list-disc space-y-2 ml-5 pr-5 text-sm md:text-lg max-h-80 overflow-y-auto scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]">
           <li>
             採用（求人、イベント、候補者管理）マーケティング支援のプラットフォームのフロントエンドリード
           </li>
