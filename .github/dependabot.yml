@@ -1,0 +1,28 @@
+# 依存更新の共通ポリシー(全リポジトリ統一、月次メンテ運用)。
+# - 通常更新: 月次でチェック。minor / patch は 1 PR に集約、major は個別 PR で精査する。
+# - 脆弱性対応: security advisory 起点の PR は schedule / cooldown に関係なく即時作成される(GitHub 標準動作)。
+# - cooldown: 公開直後の汚染版を取り込まない猶予(7 日)。
+version: 2
+
+updates:
+  # pnpm の lockfile は npm エコシステムとして監視される
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+      time: "09:00"
+      timezone: Asia/Tokyo
+    open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+    groups:
+      minor-and-patch:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+    commit-message:
+      prefix: chore(deps)
